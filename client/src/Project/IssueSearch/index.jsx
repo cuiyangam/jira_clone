@@ -45,6 +45,7 @@ const ProjectIssueSearch = ({ project }) => {
     if (searchTerm) {
       fetchIssues({ searchTerm });
     }
+    console.log('called ,,,,,,');
   };
 
   return (

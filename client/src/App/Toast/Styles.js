@@ -10,7 +10,15 @@ export const Container = styled.div`
   top: 50px;
 `;
 
-export const StyledToast = styled.div`
+export const StyledToast = styled.div
+  .attrs(props => ({
+    id: 'asdasds',
+
+    className: props.className,
+  }))
+  .withConfig({
+    displayName: 'StyledToast',
+  })`
   position: relative;
   margin-bottom: 5px;
   width: 300px;
@@ -19,7 +27,7 @@ export const StyledToast = styled.div`
   color: #fff;
   background: ${props => color[props.type]};
   cursor: pointer;
-  transition: all 0.15s;
+  transition: all 3s;
   ${mixin.clearfix}
   ${mixin.hardwareAccelerate}
 

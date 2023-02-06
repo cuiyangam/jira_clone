@@ -1,5 +1,6 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
+// https://juejin.cn/post/7062621128229355528
 
 import React from 'react';
 import ReactDOM from 'react-dom';
